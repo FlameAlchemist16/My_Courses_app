@@ -1,3 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <style name="course_banner1" parent="">
+        <item name="android:shape">rectangle</item>
+        <item name="android:activityOpenEnterAnimation">@android:anim/slide_in_left</item>
+    </style>
+    <style name="course_banner2" parent="">
+        <item name="android:shape">rectangle</item>
+        <item name="android:activityOpenEnterAnimation">@android:anim/slide_in_left</item>
+    </style>
 </resources>
