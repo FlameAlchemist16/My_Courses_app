@@ -17,11 +17,31 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/c1"
+            style="@style/course_banner1"
             android:textSize="24sp"
             android:padding="16sp"
-            android:background="">
-        </TextView>
+            android:onClick="course1"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#4E4B4F" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/c2"
+            style="@style/course_banner2"
+            android:textSize="24sp"
+            android:padding="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#4E4B4F" />
+
     </LinearLayout>
+
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/new_course"
         android:layout_width="wrap_content"
@@ -32,9 +52,7 @@
         android:layout_gravity="end|bottom"
         android:layout_margin="16dp"
         android:contentDescription="@string/add"
-        android:onClick="create_new_activity"
         app:fabCustomSize="64dp"
-        app:backgroundTint="@color/pink_400"
         tools:ignore="VectorDrawableCompat"/>
 
 </RelativeLayout>
