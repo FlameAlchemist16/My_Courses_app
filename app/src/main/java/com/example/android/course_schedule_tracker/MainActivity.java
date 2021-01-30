@@ -15,8 +15,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 // creating new courses in the app
-    public void create_new_activity(View view){
-        Button addButton = findViewById(R.id.new_course);
-
+    public void course1(View view){
+        Intent intent=new Intent(this, CourseDetail.class);
+        startActivity(intent);
     }
 }
