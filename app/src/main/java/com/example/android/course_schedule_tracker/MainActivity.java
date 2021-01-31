@@ -6,17 +6,18 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    String courseNo="Activity";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        ClickListenerActivity clickListenerActivity = new ClickListenerActivity();
+        TextView course1 =(TextView)findViewById(R.id.c1);
+        course1.setOnClickListener(clickListenerActivity);
     }
-// creating new courses in the app
-    public void course1(View view){
-        Intent intent=new Intent(this, CourseDetail.class);
-        startActivity(intent);
-    }
+
 }

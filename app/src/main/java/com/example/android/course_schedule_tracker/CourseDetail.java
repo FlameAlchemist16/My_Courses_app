@@ -1,7 +1,6 @@
 package com.example.android.course_schedule_tracker;
 
 import androidx.appcompat.app.AppCompatActivity;
-import android.view.View;
 import android.os.Bundle;
 
 public class CourseDetail extends AppCompatActivity {
@@ -11,5 +10,4 @@ public class CourseDetail extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_course_detail);
     }
-
 }
