@@ -14,13 +14,13 @@
         >
 
         <TextView
+            android:id="@+id/c1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/c1"
             style="@style/course_banner1"
             android:textSize="24sp"
-            android:padding="16sp"
-            android:onClick="course1"/>
+            android:padding="16sp" />
 
         <View
             android:layout_width="match_parent"
