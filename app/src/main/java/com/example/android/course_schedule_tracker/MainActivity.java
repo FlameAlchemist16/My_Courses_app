@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -14,11 +15,18 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        ClickListenerActivity clickListenerActivity = new ClickListenerActivity();
+//        creating onClickListener
         TextView course1 =(TextView)findViewById(R.id.c1);
-        course1.setBackgroundColor(getResources().getColor(R.color.blue_200));
-        course1.setOnClickListener(clickListenerActivity);
+        course1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+//                make intent to open new activity when a button or textView is clicked
+                Toast.makeText(v.getContext(),"Opening course details", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MainActivity.this, CourseDetail.class);
+                startActivity(intent);
+                
+            }
+        });
     }
 
 }
