@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextClock;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class ClickListenerActivity implements View.OnClickListener {

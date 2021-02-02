@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
         ClickListenerActivity clickListenerActivity = new ClickListenerActivity();
         TextView course1 =(TextView)findViewById(R.id.c1);
+        course1.setBackgroundColor(getResources().getColor(R.color.blue_200));
         course1.setOnClickListener(clickListenerActivity);
     }
 
