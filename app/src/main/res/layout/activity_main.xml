@@ -28,6 +28,7 @@
             android:background="#4E4B4F" />
 
         <TextView
+            android:id="@+id/c2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/c2"
