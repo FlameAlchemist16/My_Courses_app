@@ -18,8 +18,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".CourseDetail"
-            android:label="@string/c1" />
+            android:name=".CseBranch"
+            android:label="@string/b1" />
+        <activity
+            android:name=".CivilBranch"
+            android:label="@string/b3"/>
     </application>
 
 </manifest>
