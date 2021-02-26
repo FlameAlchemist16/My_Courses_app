@@ -30,16 +30,16 @@ public class MainActivity extends AppCompatActivity {
                 
             }
         });
-//        course2.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-////                make intent to open new activity when a button or textView is clicked
-//                Toast.makeText(v.getContext(),"Opening Branch details", Toast.LENGTH_SHORT).show();
-//                Intent intent = new Intent(MainActivity.this, ElectricalBranch.class);
-//                startActivity(intent);
-//
-//            }
-//        });
+        course2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+//                make intent to open new activity when a button or textView is clicked
+                Toast.makeText(v.getContext(),"Opening Branch details", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MainActivity.this, ElectricalBranch.class);
+                startActivity(intent);
+
+            }
+        });
         course3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
