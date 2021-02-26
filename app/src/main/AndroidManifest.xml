@@ -21,8 +21,12 @@
             android:name=".CseBranch"
             android:label="@string/b1" />
         <activity
+            android:name=".ElectricalBranch"
+            android:label="@string/b2"
+            />
+        <activity
             android:name=".CivilBranch"
-            android:label="@string/b3"/>
+            android:label="@string/b3" />
     </application>
 
 </manifest>
