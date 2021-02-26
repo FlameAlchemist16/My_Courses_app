@@ -1,9 +1,18 @@
 <resources>
     <string name="app_name">My Courses</string>
     <string name="add">add_new_course</string>
-    <string name="c1">Course 1</string>
-    <string name="c2">Course 2</string>
-    <string name="c3">Course 3</string>
-    <string name="c4">Course 4</string>
-    <string name="c5">Course 5</string>
+    <string name="b1">CSE</string>
+    <string name="b2">Electrical</string>
+    <string name="b3">Civil</string>
+    <string name="b4">AeroSpace</string>
+    <string name="b5">Chemical</string>
+    <string name="title_activity_electrical_branch">ElectricalBranch</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 </resources>
