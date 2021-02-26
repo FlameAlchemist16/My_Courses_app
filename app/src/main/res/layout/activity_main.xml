@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/green_50"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -31,7 +32,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/b2"
-            style="@style/course_banner2"
+            style="@style/course_banner1"
             android:textSize="24sp"
             android:padding="16sp" />
 
