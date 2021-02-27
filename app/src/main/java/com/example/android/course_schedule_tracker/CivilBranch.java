@@ -15,104 +15,59 @@ public class CivilBranch extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_civil_branch);
 
-        ArrayList<String> courses = new ArrayList<String>();
+        ArrayList<courses> course = new ArrayList<courses>();
 //        CE211A-Environmental Quality & Pollution
-        courses.add("CE211A");
+        course.add(new courses("CE211A","Environmental Quality and Pollution"));
 //        CE242A-Civil Engineering Materials
-        courses.add("CE242A");
+        course.add(new courses("CE242A","Civil Engineering Materials"));
 //        CE262A-Engineering Hydraulics
-        courses.add("CE262A");
+        course.add(new courses("CE262A","Engineering Hydraulics"));
 //        CE272A-Structural Analysis
-        courses.add("CE272A");
+        course.add(new courses("CE272A","Structural Analysis"));
 //        CE321A-Engineering Geosciences
-        courses.add("CE321A");
+        course.add(new courses("CE321A","Engineering Geosciences"));
 //        CE331A-Geoinformatics
-        courses.add("CE331A");
+        course.add(new courses("CE331A","Geoinformatics"));
 //        CE332A-Survey And Geology Camp
-        courses.add("CE332A");
+        course.add(new courses("CE332A","Survey And Geology Camp"));
 //        CE341A-Civil Engineering Communication Skills
-        courses.add("CE341A");
+        course.add(new courses("CE341A","Civil Engineering Communication Skills"));
 //        CE351A-Soil Mechanics
-        courses.add("CE351A");
+        course.add(new courses("CE351A","Soil Mechanics"));
 //        CE352A-Foundation Design
-        courses.add("CE211A");
+        course.add(new courses("CE211A","Foundation Design"));
 //        CE361A-Engineering Hydrology
-        courses.add("CE361A");
+        course.add(new courses("CE361A","Engineering Hydrology"));
 //        CE371A-Design Of Steel Structures
-        courses.add("CE371A");
+        course.add(new courses("CE371A","Design Of Steel Structures"));
 //        CE372A-Reinforced Cement Concrete Design
-        courses.add("CE372A");
+        course.add(new courses("CE372A","Reinforced Cement Concrete Design"));
 //        CE382A-Transportation Engineering
-        courses.add("CE382A");
+        course.add(new courses("CE382A","Transportation Engineering"));
 //        CE399A-Technical Communication
-        courses.add("CE399A");
+        course.add(new courses("CE399A","Technical Communication"));
 //        CE412A-Water Supply And Wastewater Disposal Systems
-        courses.add("CE412A");
+        course.add(new courses("CE412A","Water Supply And Wastewater Disposal Systems"));
 //        CE441A-Construction Management
-        courses.add("CE441A");
+        course.add(new courses("CE441A","Construction Management"));
 //        CE451A-Application Of Geotechnical Engineering
-        courses.add("CE451A");
+        course.add(new courses("CE451A","Application Of Geotechnical Engineering"));
 //        CE453A-Civil Engineering Design And Constructon
-        courses.add("CE453A");
+        course.add(new courses("CE453A","Civil Engineering Design And Constructon"));
 //        CE454A-Concrete Engineering
-        courses.add("CE454A");
+        course.add(new courses("CE454A","Concrete Engineering"));
 //        CE462A-Hydraulic And Hydrologic Design
-        courses.add("CE462A");
+        course.add(new courses("CE462A","Hydraulic And Hydrologic Design"));
 //        CE471A-Special Topics in Structural Design
-        courses.add("CE471A");
+        course.add(new courses("CE471A","Special Topics in Structural Design"));
 //        CE481A-Transportation Facilities Design
-        courses.add("CE481A");
+        course.add(new courses("CE481A","Transportation Facilities Design"));
 //        CE491A-Under Graduate Research -I
-        courses.add("CE491A");
+        course.add(new courses("CE491A","Under Graduate Research -I"));
 //        CE492A-Under Graduate Research -II
-        courses.add("CE492A");
-//        CE601A-Statistical Analysis For Civil Engineers
-        courses.add("CE601A");
-//        CE602A-Advanced Mathematics For Civil Engineers
-        courses.add("CE602A");
-//        CE610A-Advanced Hydrology
-        courses.add("CE610A");
-//        CE611A-Engineering Hydraulics
-        courses.add("CE611A");
-//        CE613A-Computer Methods in Hydraulics and Hydrology
-        courses.add("CE631A");
-//        CE616A-Sediment Transportation
-        courses.add("CE616A");
-//        CE620A-Structural Dynamics
-        courses.add("CE620A");
-//        CE621A-Engineering Mechanics
-        courses.add("CE621A");
-//        CE622A-Stability of Structures
-        courses.add("CE622A");
-//        CE623A-Experimental Methods in Structurl Engineering
-        courses.add("CE623A");
-//        CE629A-Earthquake Analysis and Design of Structures
-        courses.add("CE629A");
-//        CE631A-Advanced Geotechnical Engineering
-        courses.add("CE631A");
-//        CE637A-Constitutive Modeling Of Frictional Materials
-        courses.add("CE637A");
-//        CE642A-Geological Hazards
-        courses.add("CE642A");
-//        CE651A-Special Concretes
-        courses.add("CE651A");
-//        CE671A-Introduction To Remote Sensing
-        courses.add("CE671A");
-//        CE674A-Global Navigation Satellite Systems(Gnss)
-        courses.add("CE674A");
-//        CE676A-Laser Scanning And Photogrammetry
-        courses.add("CE676A");
-//        CE677A-Geospatial Data Processing
-        courses.add("CE677A");
-//        CE678A-Introduction To Geodesy
-        courses.add("CE678A");
-//        CE683A-Traffic Engineering
-        courses.add("CE683A");
-//        CE689A-Characterization of pavement materials and analysis of pavements
-        courses.add("CE689A");
-//        CE690A-Laboratory Course In Transportation Engineering
-        courses.add("CE609A");
-        ArrayAdapter<String> itemsAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, courses);
+        course.add(new courses("CE492A","Under Graduate Research -II"));
+
+        CourseAdapter itemsAdapter = new CourseAdapter(this,course);
         ListView listView = (ListView) findViewById(R.id.civilList);
         listView.setAdapter(itemsAdapter);
     }
