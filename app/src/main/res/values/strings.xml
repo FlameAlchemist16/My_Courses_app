@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">My Courses</string>
-    <string name="add">add_new_course</string>
+    <string name="allC">All Courses</string>
     <string name="b1">CSE</string>
     <string name="b2">Electrical</string>
     <string name="b3">Civil</string>
