@@ -14,12 +14,21 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-//        creating onClickListener
-        TextView course1 =(TextView)findViewById(R.id.c1);
-        TextView course2 =(TextView)findViewById(R.id.c2);
-        TextView course3 =(TextView)findViewById(R.id.c3);
-        TextView course4 =(TextView)findViewById(R.id.c4);
-        TextView course5 =(TextView)findViewById(R.id.c5);
+
+
+    }
+    public void changeToMy(View view){
+        setContentView(R.layout.activity_main);
+    }
+
+    public void changeToAll(View view){
+        setContentView(R.layout.all_courses);
+        //        creating onClickListener
+        TextView course1 =(TextView)findViewById(R.id.b1);
+        TextView course2 =(TextView)findViewById(R.id.b2);
+        TextView course3 =(TextView)findViewById(R.id.b3);
+        TextView course4 =(TextView)findViewById(R.id.b4);
+        TextView course5 =(TextView)findViewById(R.id.b5);
         course1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -27,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(v.getContext(),"Opening Branch details", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(MainActivity.this, CseBranch.class);
                 startActivity(intent);
-                
+
             }
         });
         course2.setOnClickListener(new View.OnClickListener() {
@@ -70,6 +79,7 @@ public class MainActivity extends AppCompatActivity {
 //
 //            }
 //        });
+
     }
 
 }

@@ -1,11 +1,12 @@
 package com.example.android.course_schedule_tracker;
 
 public class courses {
-//    first variable
+//    course code
     private String mCourseCode;
-//    second variable
+//    course name
     private String mCourseName;
-
+//    number of credits
+    private int mCourseCredit;
     public courses(String s1, String s2){
         mCourseCode =s1;
         mCourseName=s2;
