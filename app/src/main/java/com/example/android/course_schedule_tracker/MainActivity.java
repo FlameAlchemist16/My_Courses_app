@@ -59,26 +59,26 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-//        course4.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-////                make intent to open new activity when a button or textView is clicked
-//                Toast.makeText(v.getContext(),"Opening Branch details", Toast.LENGTH_SHORT).show();
-//                Intent intent = new Intent(MainActivity.this, AerospaceBranch.class);
-//                startActivity(intent);
-//
-//            }
-//        });
-//        course5.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-////                make intent to open new activity when a button or textView is clicked
-//                Toast.makeText(v.getContext(),"Opening Branch details", Toast.LENGTH_SHORT).show();
-//                Intent intent = new Intent(MainActivity.this, ChemicalBranch.class);
-//                startActivity(intent);
-//
-//            }
-//        });
+        course4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+//                make intent to open new activity when a button or textView is clicked
+                Toast.makeText(v.getContext(),"Opening Branch details", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MainActivity.this, AeroBranch.class);
+                startActivity(intent);
+
+            }
+        });
+        course5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+//                make intent to open new activity when a button or textView is clicked
+                Toast.makeText(v.getContext(),"Opening Branch details", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MainActivity.this, ChemBranch.class);
+                startActivity(intent);
+
+            }
+        });
 
     }
 
