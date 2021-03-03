@@ -26,6 +26,12 @@
         <activity
             android:name=".CivilBranch"
             android:label="@string/b3" />
+        <activity
+            android:name=".AeroBranch"
+            android:label="@string/b4" />
+        <activity
+            android:name=".ChemBranch"
+            android:label="@string/b5"/>
     </application>
 
 </manifest>
